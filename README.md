@@ -1,0 +1,2 @@
+- This repo reproduces Earls website frontpage.
+- Features include sliding sidebar menu and hidden menu
