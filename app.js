@@ -9,6 +9,7 @@ let headNav = document.querySelector('#head-nav')
 const nav = document.getElementById("nav")
 let access = document.querySelector("#accessIcon")
 let accessMenu = document.querySelector("#pop-menu")
+let mainContent = document.querySelector("#my-bg")
 
 //open accessibility menu
 access.addEventListener( "click",function() {
@@ -17,10 +18,18 @@ access.addEventListener( "click",function() {
     //close accessibility menu
     accessMenu.addEventListener('click', function () {
         accessMenu.classList.add('hidden')
-        console.log(accessMenu)
+
 
     })
+    mainContent.addEventListener('click',function(e){
+        if(e.target!==accessMenu){
+            accessMenu.classList.add('hidden')
+        }else{
+            return false
+        }
+    })
 })
+
 tableMenu.addEventListener( "click",function(){
     nav.classList.toggle('show-sliding-menu')
     headNav.innerHTML='Book a Table'
