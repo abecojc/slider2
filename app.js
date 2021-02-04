@@ -5,6 +5,7 @@ const online = document.getElementById("online")
 const deliveries = document.getElementById("delivery")
 let menu = document.querySelector("#menu")
 let headNav = document.querySelector('#head-nav')
+
 // let opaque = document.querySelector('#opaqueBg')
 const nav = document.getElementById("nav")
 let access = document.querySelector("#accessIcon")
